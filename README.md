@@ -1,8 +1,9 @@
 # BottomSheetDemo
-a bottomsheet widget that can modify height and drag state
+#a bottomsheet widget that can modify height and drag state
 
-Code:
-public abstract class BaseBottomSheetFrag extends BottomSheetDialogFragment {
+#Code:
+
+    public abstract class BaseBottomSheetFrag extends BottomSheetDialogFragment {
     protected Context mContext;
 
     protected View rootView;
@@ -62,7 +63,7 @@ public abstract class BaseBottomSheetFrag extends BottomSheetDialogFragment {
         mBehavior.setHideable(true);
         mBehavior.setBottomSheetCallback(mBottomSheetBehaviorCallback);
         //圆角边的关键(设置背景透明)
-//        ((View) rootView.getParent()).setBackgroundColor(Color.TRANSPARENT);
+        //((View) rootView.getParent()).setBackgroundColor(Color.TRANSPARENT);
         //重置高度
         if (dialog != null) {
             View bottomSheet = dialog.findViewById(R.id.design_bottom_sheet);
